@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+.window {
+  margin-left: 750px;
+  margin-top: 450px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 100px;
+  background: #8643DC;
+  color: #FFF;
+text-align: center;
+font-family: "Red Hat Display";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.modal button{
+  padding: 5px 15px;
+  border: none;
+  border-radius: 100px;
+  background: #8643DC;
+  color: #FFF;
+text-align: center;
+font-family: "Red Hat Display";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(104, 229, 241);
+  padding: 40px 25px;
+  border: 3px solid #13514f;
+  border-radius: 2px;
+}
+h2{
+  color: #25202F;
+font-family: "Red Hat Display";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 10px 25px;
+}
+p{
+  color: #47444E;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  padding: 5px 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 112, 101, 0.3);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
